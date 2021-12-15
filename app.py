@@ -1,8 +1,8 @@
 from flask import Flask
-app = Flask ( __name__ )
+app = Flask (__name__)
 
-@app . route ( '/ ')
+@app.route ('/')
 def hello_openshift():
     return 'Python no OpenShift!'
 
-app . run ( host = ' 0.0.0.0 ', port =8080)
+app.run(host='0.0.0.0', port=8080)
